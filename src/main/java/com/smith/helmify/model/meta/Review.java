@@ -27,7 +27,6 @@ public class Review {
     @ManyToOne
     @NotNull
     @JoinColumn(name = "userId", nullable = false)
-    @JsonIgnore
     private User user;
 
     @Column(name = "stars", nullable = false)
