@@ -218,7 +218,7 @@ public class TransactionServiceImpl implements TransactionService {
 
         // Charge payment via Midtrans Snap
         MidtransSnapRequestDTO.TransactionDetails transactionDetails = new MidtransSnapRequestDTO.TransactionDetails(
-                "TRANSACTION-" + transaction.getId(),
+                "HLMTRX-" + transaction.getId(),
                 total
         );
         req.setTransaction_details(transactionDetails);
